@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noel B Augustine | Engineer & Developer</title>
+    <meta name="description"
+        content="Portfolio of Noel B Augustine, a B.Tech graduate pursuing excellence in engineering and development.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=JetBrains+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-grid"></div>
+        <div class="loader-wheel">
+            <svg viewBox="0 0 100 100" width="80" height="80">
+                <!-- Outer ring -->
+                <circle cx="50" cy="50" r="45" fill="none" stroke="var(--primary)" stroke-width="2" opacity="0.3" />
+                <!-- Gear teeth -->
+                <g class="gear-teeth">
+                    <rect x="48" y="5" width="4" height="10" fill="var(--primary)" />
+                    <rect x="48" y="85" width="4" height="10" fill="var(--primary)" />
+                    <rect x="5" y="48" width="10" height="4" fill="var(--primary)" />
+                    <rect x="85" y="48" width="10" height="4" fill="var(--primary)" />
+                    <rect x="18" y="18" width="4" height="10" fill="var(--primary)" transform="rotate(45 20 23)" />
+                    <rect x="78" y="18" width="4" height="10" fill="var(--primary)" transform="rotate(-45 80 23)" />
+                    <rect x="18" y="72" width="4" height="10" fill="var(--primary)" transform="rotate(-45 20 77)" />
+                    <rect x="78" y="72" width="4" height="10" fill="var(--primary)" transform="rotate(45 80 77)" />
+                </g>
+                <!-- Inner circle -->
+                <circle cx="50" cy="50" r="20" fill="none" stroke="var(--primary)" stroke-width="3" />
+                <!-- Center dot -->
+                <circle cx="50" cy="50" r="5" fill="var(--primary)" />
+            </svg>
+        </div>
+        <p class="loader-text">INITIALIZING_SYSTEM...</p>
+    </div>
+
+    <header id="header">
+        <nav class="container">
+            <div class="logo">NOEL<span>.DEV</span></div>
+            <ul class="nav-links">
+                <li><a href="#hero">01. Home</a></li>
+                <li><a href="#about">02. About</a></li>
+                <li><a href="#skills">03. Capabilities</a></li>
+                <li><a href="#projects">04. Works</a></li>
+                <li><a href="#contact">05. Contact</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <!-- Kinetic Background Text -->
+            <div class="kinetic-text-container" style="position: absolute; top: 20%; opacity: 0.1; z-index: -1;">
+                <span class="kinetic-text">ENGINEER DEVELOPER ARCHITECT </span>
+                <span class="kinetic-text">ENGINEER DEVELOPER ARCHITECT </span>
+            </div>
+
+            <div class="container hero-content">
+                <p class="fade-in">System Online //</p>
+                <h1 class="fade-in-delay">Noel B<br><span class="highlight">Augustine</span></h1>
+                <p class="fade-in-delay" style="border-color: var(--primary); padding-left: 1rem;">Pursuing B.Tech
+                    Graduate<br><span style="color: var(--primary)">//</span> Engineering Precision & Digital Logic</p>
+                <div class="hero-btns fade-in-delay">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section" style="position: relative; overflow: hidden;">
+            <div class="marquee" style="position: absolute; top: 10%; opacity: 0.05; z-index: -1;">
+                <div class="marquee-content">
+                    <span class="marquee-text">PRECISION // LOGIC // CODE // </span>
+                    <span class="marquee-text">PRECISION // LOGIC // CODE // </span>
+                </div>
+            </div>
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p style="font-size: 1.1rem; color: var(--text-dim);">I am an engineering student with a focus
+                            on building robust, scalable systems. My approach combines technical depth with a pragmatic
+                            problem-solving mindset. I don't just write code; I engineer solutions that stand the test
+                            of time.</p>
+                        <br>
+                        <p style="font-size: 1.1rem; color: var(--text-dim);">Currently pursuing my B.Tech degree, I am
+                            constantly exploring new technologies and methodologies to enhance my craft.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2 class="section-title">Technical Capabilities</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <div class="skill-icon">&lt;/&gt;</div>
+                        <h3>Frontend Architecture</h3>
+                        <p>Specializing in responsive, performant interfaces using modern web standards.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">{ }</div>
+                        <h3>Backend Logic</h3>
+                        <p>Building secure and scalable server-side applications and APIs.</p>
+                    </div>
+                    <div class="skill-card">
+                        <div class="skill-icon">#_</div>
+                        <h3>System Design</h3>
+                        <p>Structuring complex data flows and optimizing for efficiency.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2 class="section-title">Selected Works</h2>
+                <div class="projects-grid">
+                    <!-- Project Card 1 -->
+                    <div class="project-card">
+                        <div class="project-img"></div>
+                        <div class="project-info">
+                            <h3>Project Alpha</h3>
+                            <p>Advanced data visualization dashboard for real-time analytics.</p>
+                            <a href="#" class="project-link">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 2 -->
+                    <div class="project-card">
+                        <div class="project-img"></div>
+                        <div class="project-info">
+                            <h3>System Beta</h3>
+                            <p>Automated resource management system for enterprise client.</p>
+                            <a href="#" class="project-link">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                    <!-- Project Card 3 -->
+                    <div class="project-card">
+                        <div class="project-img"></div>
+                        <div class="project-info">
+                            <h3>Module Gamma</h3>
+                            <p>High-performance component library for internal tools.</p>
+                            <a href="#" class="project-link">View Case Study &rarr;</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="container">
+                <h2 class="section-title">Initialize Contact</h2>
+                <div class="contact-container">
+                    <form id="contact-form">
+                        <input type="text" placeholder="NAME_INPUT" required>
+                        <input type="email" placeholder="EMAIL_ADDRESS" required>
+                        <textarea placeholder="MESSAGE_CONTENT" required></textarea>
+                        <button type="submit" class="btn btn-primary">TRANSMIT MESSAGE</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Noel B Augustine. All Systems Nominal.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
