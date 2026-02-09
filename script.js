@@ -1,10 +1,14 @@
-// Header scroll effect
+// Header scroll effect & Background Text Fade
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
-    if (window.scrollY > 50) {
-        header.classList.add('scrolled');
-    } else {
-        header.classList.remove('scrolled');
+    header.classList.toggle('scrolled', window.scrollY > 50);
+
+    // Fade out global background text
+    const bgText = document.getElementById('global-bg-text');
+    if (bgText) {
+        // Fade out completely after scrolling 1.5x the viewport height
+        const opacity = Math.max(0, 1 - (window.scrollY / (window.innerHeight * 1.5)));
+        bgText.style.opacity = opacity;
     }
 });
 
