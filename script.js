@@ -1,21 +1,3 @@
-// ==================== PRELOADER ====================
-window.addEventListener('load', () => {
-    const preloader = document.getElementById('preloader');
-    const wheel = preloader.querySelector('.loader-wheel');
-
-    // Short delay to show the loader animation
-    setTimeout(() => {
-        // Fade out preloader
-        preloader.classList.add('loaded');
-
-        // Clone wheel to corner
-        const cornerWheel = wheel.cloneNode(true);
-        cornerWheel.classList.remove('loader-wheel');
-        cornerWheel.classList.add('corner-wheel');
-        document.body.appendChild(cornerWheel);
-    }, 1500); // 1.5s loading time
-});
-
 // Header scroll effect
 window.addEventListener('scroll', () => {
     const header = document.querySelector('header');
@@ -165,18 +147,12 @@ const runTypewriter = (target) => {
             clearInterval(target.interval);
             target.innerText = originalText; // Ensure full text is set
             target.classList.remove('typing'); // Remove cursor
-
-            // Randomly select a glitch variation for idle state
-            const glitchClasses = ['glitch-idle', 'glitch-noise', 'glitch-slice'];
-            const randomClass = glitchClasses[Math.floor(Math.random() * glitchClasses.length)];
-
-            target.classList.add(randomClass);
-            target.setAttribute('data-text', originalText);
+            // No glitch effect - just leave the text as is
         }
     }, 80); // Slightly faster typing
 }
 
-// Trigger Glitch on Intersection
+// Trigger Typewriter on Intersection
 const glitchObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
