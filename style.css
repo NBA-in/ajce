@@ -79,6 +79,46 @@ header {
     border-bottom: 1px solid transparent;
 }
 
+/* Canvas Styles */
+#fluid-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 9999;
+    pointer-events: none;
+    mix-blend-mode: screen;
+    /* Blends nicely with dark bg */
+}
+
+#lines-canvas {
+    /* Styles handled in JS but fallback here */
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Scroll Reveal */
+.reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    will-change: opacity, transform;
+}
+
+.reveal-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Hacker Text */
+.hacker-text {
+    font-family: 'JetBrains Mono', monospace;
+    display: inline-block;
+}
+
 header.scrolled {
     background: var(--glass);
     backdrop-filter: blur(12px);
